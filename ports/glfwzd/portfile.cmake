@@ -11,7 +11,7 @@ vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     wayland         GLFW_USE_WAYLAND
 )
 
-vcpkg_cmake_configure(
+vcpkg_configure_cmake(
     SOURCE_PATH "${SOURCE_PATH}"
     OPTIONS
         -DGLFW_BUILD_EXAMPLES=OFF
