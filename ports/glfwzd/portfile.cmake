@@ -1,8 +1,8 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO cagatayyigit/glfw
-  REF 21b7b1c
-  SHA512 7b2bb7acb2a8ff07bff59cfa27247a7b2cced03828919cd65cc0c8cf1f724f5f1e947ed6992dcdbc913fb470694a52613d1861eaaadbf8903e94eb9cdfe4d000
+  REF 21b7b1c6c65f8b91e40fb6f1fe0dbf0da280d3c3
+  SHA512 0
   HEAD_REF master
 )
 
