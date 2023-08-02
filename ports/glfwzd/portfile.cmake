@@ -3,7 +3,7 @@ vcpkg_from_github(
   REPO cagatayyigit/glfwzd
   REF glfwzdlastcommithash
   SHA512 0
-  HEAD_REF master
+  HEAD_REF main
 )
 
 vcpkg_configure_cmake(
