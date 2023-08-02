@@ -1,7 +1,7 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO cagatayyigit/glfwzd
-  REF glfwzdlastcommithash
+  REF 8dc16cceb0862a5c5c1599a2323ed5f1d82f366c
   SHA512 0
   HEAD_REF main
 )
