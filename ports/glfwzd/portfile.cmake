@@ -1,7 +1,21 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
-  REPO cagatayyigit/glfw
-  REF 21b7b1c6c65f8b91e40fb6f1fe0dbf0da280d3c3
-  SHA512 3d614f8b2bd0b31bb4d3a5f78f8224197a8ed8183a406dcae96b9548a3c23c2da2a36556758aa9336bbbb8140631636555163a866dc349832b68b12772c46fa9
+  REPO cagatayyigit/glfwzd
+  REF glfwzdlastcommithash
+  SHA512 0
   HEAD_REF master
 )
+
+vcpkg_configure_cmake(
+  SOURCE_PATH "${SOURCE_PATH}"
+  PREFER_NINJA
+)
+vcpkg_install_cmake()
+vcpkg_fixup_cmake_targets()
+
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+
+file(
+  INSTALL "${SOURCE_PATH}/LICENSE"
+  DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}"
+  RENAME copyright)
